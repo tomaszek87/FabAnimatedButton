@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tomek.reveallayout.reveal.activity.DrawerActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <io.codetail.widget.RevealLinearLayout
+        android:id="@+id/reveal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/layout_to_reveal"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/backround_gradient"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+            
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/fab1"
+
+                    layout="@layout/fab_menu"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="70dp" />
+
+                <include
+                    android:id="@+id/fab2"
+                    layout="@layout/fab_menu2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="70dp"
+                     />
+
+                <include
+                    android:id="@+id/fab3"
+                    layout="@layout/fab_menu3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="70dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </io.codetail.widget.RevealLinearLayout>
+
+
+</RelativeLayout>
