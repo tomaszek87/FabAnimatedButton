@@ -42,7 +42,7 @@ public class FabAnimator {
         animationSet.addAnimation(r);
         animationSet.setFillAfter(true);
         ValueAnimator anim = new ValueAnimator();
-        anim.setIntValues(Color.parseColor("#ff0091ea"), Color.parseColor("#000091ea"));
+        anim.setIntValues(Color.parseColor("#0E3B43"), Color.parseColor("#0E3B43"));
         anim.setEvaluator(new ArgbEvaluator());
         anim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
@@ -135,7 +135,7 @@ public class FabAnimator {
         animationSet.addAnimation(r);
         animationSet.setFillAfter(true);
         ValueAnimator anim = new ValueAnimator();
-        anim.setIntValues(Color.parseColor("#ffb71c1c"), Color.parseColor("#ff0091ea"));
+        anim.setIntValues(Color.parseColor("#ffb71c1c"), Color.parseColor("#0E3B43"));
         anim.setEvaluator(new ArgbEvaluator());
         anim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
